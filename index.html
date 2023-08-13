@@ -4,13 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portfolio</title>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
 </head>
 
 <body>
+    <div id="preloader"></div>
     <div class="menu-box">
         <a href="#Home">Home</a>
         <a href="#About">About</a>
@@ -152,7 +153,15 @@
             offset: 200,
             duration: 1000,
             easing: 'ease-in-cubic'
-        });</script>
+        });
+
+        var loader = document.getElementById('preloader')
+
+        console.log(loader);
+        window.addEventListener("load", () => {
+            loader.style.display = "none";
+        })
+    </script>
 </body>
 
 </html>

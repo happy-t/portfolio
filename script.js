@@ -18,4 +18,6 @@ function visiitLearn_Sanskrit()
     window.open("https://github.com/happy-t/Learn_Sanskrit").focus();
 }
 
-console.log("hello");
+
+
+

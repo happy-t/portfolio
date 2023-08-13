@@ -12,6 +12,17 @@ body {
     overflow-x: hidden;
 }
 
+#preloader{
+    background: black url(/assets/preloader.gif) no-repeat center center;
+    z-index: 10000;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+
+}
+
 header {
     display: flex;
     overflow: hidden;
@@ -229,6 +240,8 @@ a {
     margin-top: 10px;
     text-align: center;
 }
+
+
 
 @media (max-width:740px) {
     .flex-contact {
