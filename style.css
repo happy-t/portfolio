@@ -13,21 +13,12 @@ body{
 }
 
 header{
-<<<<<<< HEAD
-    background-image: url('../portfolio/assets/photo.png');
-    background-repeat: no-repeat;
-    background-color: black;
-    background-position: right top;
-    background-attachment: fixed;
-    height: 90vh;
-=======
     display: flex;
     overflow: hidden;
     grid-template-columns: 1fr 1fr;
     /* height: 90%; */
     overflow-x: hidden;
     /* border: 2px solid red; */
->>>>>>> responsive
     width: 100%;
     margin: 0px;
 }
@@ -236,8 +227,6 @@ a{
     margin-top: 10px;
     text-align: center;
 }
-<<<<<<< HEAD
-=======
 
 @media (max-width:740px) {
 .flex-contact{
@@ -248,4 +237,3 @@ a{
     align-content: center;
 }
 }
->>>>>>> responsive
