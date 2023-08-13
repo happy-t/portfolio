@@ -5,38 +5,87 @@
 }
 
 body{
-    width: 100vw;
-    height: 100vh; 
+    width: 100%;
+    height: 100%; 
     padding: 0px;
     background: #000000;
     overflow-x: hidden;
 }
 
 header{
+<<<<<<< HEAD
     background-image: url('../portfolio/assets/photo.png');
     background-repeat: no-repeat;
     background-color: black;
     background-position: right top;
     background-attachment: fixed;
     height: 90vh;
+=======
+    display: flex;
+    overflow: hidden;
+    grid-template-columns: 1fr 1fr;
+    /* height: 90%; */
+    overflow-x: hidden;
+    /* border: 2px solid red; */
+>>>>>>> responsive
     width: 100%;
     margin: 0px;
+}
+
+
+.content-wrapper{
     color: white;
+    /* border: 2px solid red; */
+    flex: 1;
+
+}
+
+.img-wrapper{
+    /* border: 2px solid red; */
+    overflow-x: hidden;
+    flex: 1;
+}
+
+.img-wrapper img{
+    overflow: hidden;
+    /* max-width: 100%; */
+    max-height: 100%;    
+}
+
+@media (max-width:740px) {
+    header{
+        flex-direction: column;
+    }
+    .img-wrapper{
+        /* border: 2px solid red; */
+        overflow-x:visible;
+        flex: 1;
+    }
+    
+    .img-wrapper img{
+        overflow: visible;
+        /* max-width: 100%; */
+        max-height: 100%;    
+        width: 100%;
+    }
 }
 
 .flex-box{
     display: flex;
-    width: 100vw;
+    /* border: 2px solid red; */
+
+    /* width: 100%; */
     justify-content: center;
     align-items: center;
 }
 
 .menu-box {
+    /* border: 2px solid red; */
     position: fixed;
     top: 0;
     left: 0;
     display: grid;
-    width: 100vw;
+    width: 100%;
     align-items: center;
     column-gap: 55px;
     justify-content: center;
@@ -73,18 +122,21 @@ a{
 .sub-title{
     font-size: 25px;
     color: whitesmoke;
+    /* border: 2px solid red; */
+
     padding: 10px;
 }
 
 .flex-portfolio{
     display: grid;
-    justify-content: space-evenly;
+    justify-content: center;
+    /* border: 2px solid red; */
+    column-gap: 20px;   
     grid-template-columns: repeat(2, auto);
 }
 
 .card{
-    box-shadow: 3px 0px 13px 0 rgba(247, 246, 246, 0.371);
-    width: 250px;
+    box-shadow: 11px -7px 20px 0 rgba(247, 246, 246, 0.371);
     margin: 15px;
     padding: 15px;
     border-radius: 5px;
@@ -97,27 +149,40 @@ a{
 
 .flex-portfolio .card{
     max-height: 250px;
-    width: 500px;
     overflow: hidden;
     transition: max-height 1s;
 }
+
 .flex-portfolio .card:hover{
     box-shadow: -10px 7px 13px 0 rgba(247, 246, 246, 0.371);
     cursor: pointer;
     max-height: 1000px;
     height: fit-content;
 }
+@media (max-width:740px) {
+    .flex-portfolio{
+        display: grid;
+        justify-content: center;
+        column-gap: 20px;   
+        grid-template-columns: repeat(1, auto);
+    }
+
+    .flex-portfolio .card{
+        max-height: 1000px;
+        overflow: hidden;
+        transition: max-height 1s;
+    }
+}
 
 .flex-about{
     display: flex;
     align-items: center;
-    width: 100%;
+    max-width: 100%;
     justify-content: center;
 }
 
 .flex-about .card{
     box-shadow: 3px 0px 13px 0 rgba(247, 246, 246, 0.371);
-    width: 60vh;
     padding: 15px;
     font-family: sans-serif;
     line-height: 2;
@@ -131,17 +196,27 @@ a{
 
 .flex-contact{
     display: grid;
-    grid-template-columns: repeat(5, auto);
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(2, auto);
     justify-content: space-evenly;
+    align-content: center;
 }
 
 .flex-contact .card{
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 70%;
+    height: 65%;
     flex-direction: column;
     margin-bottom: 100px;
     cursor: pointer;
+}
+
+.card-wrapper{
+    display: flex;
+    width: 100%;
+    justify-content: center;
 }
 
 .flex-contact .card:hover{
@@ -161,3 +236,16 @@ a{
     margin-top: 10px;
     text-align: center;
 }
+<<<<<<< HEAD
+=======
+
+@media (max-width:740px) {
+.flex-contact{
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    grid-template-rows: repeat(5, auto);
+    justify-content: space-around;
+    align-content: center;
+}
+}
+>>>>>>> responsive
