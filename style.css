@@ -12,7 +12,7 @@ body {
     overflow-x: hidden;
 }
 
-#preloader{
+.preloader{
     background: black url(/assets/preloader.gif) no-repeat center center;
     z-index: 10000;
     height: 100%;
@@ -20,7 +20,6 @@ body {
     top: 0;
     left: 0;
     position: fixed;
-
 }
 
 header {

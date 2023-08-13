@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <div id="preloader"></div>
+    <div class="preloader"></div>
     <div class="menu-box">
         <a href="#Home">Home</a>
         <a href="#About">About</a>
@@ -155,11 +155,11 @@
             easing: 'ease-in-cubic'
         });
 
-        var loader = document.getElementById('preloader')
+        var loader = document.getElementsByClassName('preloader')
 
         console.log(loader);
         window.addEventListener("load", () => {
-            loader.style.display = "none";
+            loader[0].style.display = "none";
         })
     </script>
 </body>
