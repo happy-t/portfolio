@@ -1,18 +1,18 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
 
-body{
+body {
     width: 100%;
-    height: 100%; 
+    height: 100%;
     padding: 0px;
     background: #000000;
     overflow-x: hidden;
 }
 
-header{
+header {
     display: flex;
     overflow: hidden;
     grid-template-columns: 1fr 1fr;
@@ -24,44 +24,45 @@ header{
 }
 
 
-.content-wrapper{
+.content-wrapper {
     color: white;
     /* border: 2px solid red; */
     flex: 1;
 
 }
 
-.img-wrapper{
+.img-wrapper {
     /* border: 2px solid red; */
     overflow-x: hidden;
     flex: 1;
 }
 
-.img-wrapper img{
+.img-wrapper img {
     overflow: hidden;
     /* max-width: 100%; */
-    max-height: 100%;    
+    max-height: 100%;
 }
 
 @media (max-width:740px) {
-    header{
+    header {
         flex-direction: column;
     }
-    .img-wrapper{
+
+    .img-wrapper {
         /* border: 2px solid red; */
-        overflow-x:visible;
+        overflow-x: visible;
         flex: 1;
     }
-    
-    .img-wrapper img{
+
+    .img-wrapper img {
         overflow: visible;
         /* max-width: 100%; */
-        max-height: 100%;    
+        max-height: 100%;
         width: 100%;
     }
 }
 
-.flex-box{
+.flex-box {
     display: flex;
     /* border: 2px solid red; */
 
@@ -86,7 +87,7 @@ header{
     z-index: 1000;
 }
 
-.menu{
+.menu {
     margin: 10px;
     padding: 10px;
     background-color: white;
@@ -94,14 +95,14 @@ header{
     border-radius: 5px;
 }
 
-a{
+a {
     text-decoration: none;
     font-size: 20px;
     font-family: sans-serif;
     color: whitesmoke;
 }
 
-.title{
+.title {
     align-items: center;
     height: 85vh;
     display: flex;
@@ -110,7 +111,7 @@ a{
     font-size: 85px;
 }
 
-.sub-title{
+.sub-title {
     font-size: 25px;
     color: whitesmoke;
     /* border: 2px solid red; */
@@ -118,15 +119,15 @@ a{
     padding: 10px;
 }
 
-.flex-portfolio{
+.flex-portfolio {
     display: grid;
     justify-content: center;
     /* border: 2px solid red; */
-    column-gap: 20px;   
+    column-gap: 20px;
     grid-template-columns: repeat(2, auto);
 }
 
-.card{
+.card {
     box-shadow: 11px -7px 20px 0 rgba(247, 246, 246, 0.371);
     margin: 15px;
     padding: 15px;
@@ -138,41 +139,42 @@ a{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.flex-portfolio .card{
+.flex-portfolio .card {
     max-height: 250px;
     overflow: hidden;
     transition: max-height 1s;
 }
 
-.flex-portfolio .card:hover{
+.flex-portfolio .card:hover {
     box-shadow: -10px 7px 13px 0 rgba(247, 246, 246, 0.371);
     cursor: pointer;
     max-height: 1000px;
     height: fit-content;
 }
+
 @media (max-width:740px) {
-    .flex-portfolio{
+    .flex-portfolio {
         display: grid;
         justify-content: center;
-        column-gap: 20px;   
+        column-gap: 20px;
         grid-template-columns: repeat(1, auto);
     }
 
-    .flex-portfolio .card{
+    .flex-portfolio .card {
         max-height: 1000px;
         overflow: hidden;
         transition: max-height 1s;
     }
 }
 
-.flex-about{
+.flex-about {
     display: flex;
     align-items: center;
     max-width: 100%;
     justify-content: center;
 }
 
-.flex-about .card{
+.flex-about .card {
     box-shadow: 3px 0px 13px 0 rgba(247, 246, 246, 0.371);
     padding: 15px;
     font-family: sans-serif;
@@ -185,7 +187,7 @@ a{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.flex-contact{
+.flex-contact {
     display: grid;
     grid-template-columns: repeat(3, auto);
     grid-template-rows: repeat(2, auto);
@@ -193,7 +195,7 @@ a{
     align-content: center;
 }
 
-.flex-contact .card{
+.flex-contact .card {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -204,36 +206,36 @@ a{
     cursor: pointer;
 }
 
-.card-wrapper{
+.card-wrapper {
     display: flex;
     width: 100%;
     justify-content: center;
 }
 
-.flex-contact .card:hover{
+.flex-contact .card:hover {
     box-shadow: -10px 7px 13px 0 rgba(247, 246, 246, 0.371);
 }
 
-.flex-contact .card img{
+.flex-contact .card img {
     height: 60px;
     width: 60px;
 }
 
-.flex-contact .card h3{
+.flex-contact .card h3 {
     margin-top: 10px;
 }
 
-.flex-contact .card h5{
+.flex-contact .card h5 {
     margin-top: 10px;
     text-align: center;
 }
 
 @media (max-width:740px) {
-.flex-contact{
-    display: grid;
-    grid-template-columns: repeat(1, auto);
-    grid-template-rows: repeat(5, auto);
-    justify-content: space-around;
-    align-content: center;
-}
+    .flex-contact {
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+        grid-template-rows: repeat(5, auto);
+        justify-content: space-around;
+        align-content: center;
+    }
 }
